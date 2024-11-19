@@ -1,6 +1,7 @@
 .header {
   background-color: var(--main);
-  padding: 10px 15px;
+  padding: 10px 16px;
+  margin-bottom: 24px;
 }
 
 .title {
