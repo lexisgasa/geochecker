@@ -4,13 +4,13 @@ const Main = (): React.ReactElement => {
   return (
     <ul className="main-container">
       <li>
-        <a href="">Empleado</a>
+        <a href="empleado">Empleado</a>
       </li>
       <li>
-        <a href="">Supervisor</a>
+        <a href="supervisor">Supervisor</a>
       </li>
       <li>
-        <a href="">Administrador</a>
+        <a href="administrador">Administrador</a>
       </li>
     </ul>
   );
