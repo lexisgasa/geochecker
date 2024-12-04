@@ -11,7 +11,7 @@ const roles: RoleType[] = [
 const Main = (): React.ReactElement => {
   return (
     <>
-      <h2 main-title>Bienvenido</h2>
+      <h2 className="main-title">Bienvenido</h2>
       <p>Escoge tu rol para continuar:</p>
       <ul className="main-container">
         {roles.map((role) => (

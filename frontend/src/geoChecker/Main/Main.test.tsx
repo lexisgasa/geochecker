@@ -3,16 +3,14 @@ import Main from "./Main";
 
 describe("Given the Main component", () => {
   describe("When it is rendered", () => {
-    test("Then it should display 'Supervisor' inside a link", () => {
-      const supervisorLinkText = /supervisor/i;
+    test("Then it should display 'bienvenido' inside a link", () => {
+      const titleText = /bienvenido/i;
 
       render(<Main />);
 
-      const supervisorLink = screen.getByRole("link", {
-        name: supervisorLinkText,
-      });
+      const title = screen.getByRole("heading", { name: titleText });
 
-      expect(supervisorLink).toBeInTheDocument();
+      expect(title).toBeInTheDocument();
     });
   });
 });
