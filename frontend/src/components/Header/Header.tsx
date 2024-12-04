@@ -2,9 +2,9 @@ import "./Header.css";
 
 const Header = (): React.ReactElement => {
   return (
-    <div className="header">
+    <header className="header">
       <h1 className="title">GeoChecker</h1>
-    </div>
+    </header>
   );
 };
 
