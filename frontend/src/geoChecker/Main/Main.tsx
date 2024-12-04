@@ -2,17 +2,21 @@ import "./Main.css";
 
 const Main = (): React.ReactElement => {
   return (
-    <ul className="main-container">
-      <li>
-        <a href="empleado">Empleado</a>
-      </li>
-      <li>
-        <a href="supervisor">Supervisor</a>
-      </li>
-      <li>
-        <a href="administrador">Administrador</a>
-      </li>
-    </ul>
+    <>
+      <h2 main-title>Bienvenido</h2>
+      <p>Escoge tu rol para continuar:</p>
+      <ul className="main-container">
+        <li className="main-container__link">
+          <a href="empleado">Empleado</a>
+        </li>
+        <li className="main-container__link">
+          <a href="supervisor">Supervisor</a>
+        </li>
+        <li className="main-container__link">
+          <a href="administrador">Administrador</a>
+        </li>
+      </ul>
+    </>
   );
 };
 
