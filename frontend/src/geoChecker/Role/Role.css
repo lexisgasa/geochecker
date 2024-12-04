@@ -1,0 +1,22 @@
+.nav-links {
+  background-color: var(--main);
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  border: 1px solid var(--main);
+  transition: background-color 0.5s, transform 0.5s;
+
+  &:hover {
+    background-color: transparent;
+    transform: scale(1.02);
+
+    .nav-links__link {
+      color: var(--main);
+    }
+  }
+}
+
+.nav-links__link {
+  color: var(--bright);
+  transition: color;
+}
