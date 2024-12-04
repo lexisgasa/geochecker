@@ -1,4 +1,4 @@
-import Main from "../../geoChecker/Main/Main";
+import { Outlet } from "react-router";
 import Header from "../Header/Header";
 import "./App.css";
 
@@ -7,7 +7,7 @@ const App = (): React.ReactElement => {
     <div className="app-container">
       <Header />
       <main className="page">
-        <Main />
+        <Outlet />
       </main>
     </div>
   );
