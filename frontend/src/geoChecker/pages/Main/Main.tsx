@@ -1,5 +1,5 @@
-import Role from "../Role/Role";
-import { RoleType } from "../Role/types";
+import Role from "../../components/Role/Role";
+import { RoleType } from "../../components/Role/types";
 import "./Main.css";
 
 const roles: RoleType[] = [

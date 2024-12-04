@@ -4,7 +4,7 @@ import {
   Route,
 } from "react-router";
 import App from "../App/App";
-import Main from "../../geoChecker/Main/Main";
+import Main from "../../geoChecker/pages/Main/Main";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
