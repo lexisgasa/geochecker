@@ -1,4 +1,12 @@
+import Role from "../Role/Role";
+import { RoleType } from "../Role/types";
 import "./Main.css";
+
+const roles: RoleType[] = [
+  { id: 1, name: "Trabajador", path: "trabajador" },
+  { id: 2, name: "Supervisor", path: "supervisor" },
+  { id: 3, name: "Administrador", path: "administrador" },
+];
 
 const Main = (): React.ReactElement => {
   return (
@@ -6,15 +14,9 @@ const Main = (): React.ReactElement => {
       <h2 main-title>Bienvenido</h2>
       <p>Escoge tu rol para continuar:</p>
       <ul className="main-container">
-        <li className="main-container__link">
-          <a href="empleado">Empleado</a>
-        </li>
-        <li className="main-container__link">
-          <a href="supervisor">Supervisor</a>
-        </li>
-        <li className="main-container__link">
-          <a href="administrador">Administrador</a>
-        </li>
+        {roles.map((role) => (
+          <Role key={role.id} {...role} />
+        ))}
       </ul>
     </>
   );

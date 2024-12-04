@@ -5,9 +5,3 @@
   justify-content: center;
   gap: 30px;
 }
-
-.main-container__link {
-  border: 1px solid var(--main);
-  width: 100%;
-  text-align: center;
-}
