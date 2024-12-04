@@ -15,7 +15,8 @@ body {
   background-color: var(--bright);
 }
 
-h1 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -32,6 +33,5 @@ a {
 
   &:hover {
     text-decoration: underline;
-    color: var(--main);
   }
 }

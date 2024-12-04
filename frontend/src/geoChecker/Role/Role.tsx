@@ -3,8 +3,10 @@ import "./Role.css";
 
 const Role = ({ name, path }: RoleType): React.ReactElement => {
   return (
-    <li className="main-container__link">
-      <a href={path}>{name}</a>
+    <li className="nav-links">
+      <a href={path} className="nav-links__link">
+        {name}
+      </a>
     </li>
   );
 };
